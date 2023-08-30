@@ -1,1 +1,8 @@
 <h2>Available drones</h2>
+<% /* console.log(allDrones) */ %>
+<% allDrones.forEach(eachDrone => { %>
+ <h3>Drone name: <%- eachDrone.name %></h3>
+ <h3>Numer of propellers: <%- eachDrone.propellers %></h3>
+ <h3>Max Speed <%- eachDrone.maxSpeed %> meters per second</h3>
+ <a href="/drones/<%-eachDrone._id%>/edit">Edit this drone</a>
+<% }) %>

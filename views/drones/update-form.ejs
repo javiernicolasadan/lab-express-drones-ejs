@@ -1,1 +1,8 @@
 <h2>Update the drone</h2>
+<% /* console.log(droneToEdit) */ %>
+<form method="post">
+    <labe>Name:<input name="name" value="<%- droneToEdit.name %>"/></labe><br>
+    <labe>Propellers:<input name="propellers" type="number" value="<%-droneToEdit.propellers  %>"/></labe><br>
+    <labe>maxSpeed:<input name="maxSpeed" type="number" value="<%- droneToEdit.maxSpeed %>"/></labe><br>
+    <button type="submit">Edit this drone</button>
+</form>
